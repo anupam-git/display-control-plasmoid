@@ -9,6 +9,10 @@ Rectangle {
     width: 200
     height: 400
 
+    Component.onCompleted: {
+        console.log("### SCREENS : ", JSON.stringify(Qt.application.screens, null, 2));
+    }
+
     ListModel {
         id: displayModel
 
