@@ -4,13 +4,16 @@
 #include <QObject>
 
 class DDCUtilHelper : public QObject {
-    Q_OBJECT
+  Q_OBJECT
 
-    public:
-        DDCUtilHelper(QObject *parent = nullptr);
+ public:
+  DDCUtilHelper(QObject *parent = nullptr);
 
-    public slots:
-        void init();
+ public slots:
+  void init();
+
+ signals:
+  void initCompleted();
 };
 
-#endif //DDCUTILHELPER_H
+#endif  // DDCUTILHELPER_H

@@ -32,6 +32,13 @@ Item {
                 DDCUtilHelper.init();
             }
 
+            Connections {
+                target: DDCUtilHelper
+                onInitCompleted: {
+                    console.log("Init Completed.")
+                }
+            }
+
             ListModel {
                 id: displayModel
 
