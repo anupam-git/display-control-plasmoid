@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=Display Control Plasmoid
+Comment=A display control plasmoid
+
+Type=Service
+Icon=computer
+#X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+#X-Plasma-Provides=org.kde.plasma.launchermenu
+
+X-KDE-PluginInfo-Author=Anupam Basak, Probal Basak
+X-KDE-PluginInfo-Email=anupam.basak27@gmail.com, probal31@gmail.com
+X-KDE-PluginInfo-Name=displaycontrolplasmoid
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-EnabledByDefault=true
