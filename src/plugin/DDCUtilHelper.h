@@ -1,7 +1,10 @@
 #ifndef DDCUTILHELPER_H
 #define DDCUTILHELPER_H
 
+#include <QList>
 #include <QObject>
+
+#include "monitoritem.h"
 
 class DDCUtilHelper : public QObject {
   Q_OBJECT
@@ -10,10 +13,10 @@ class DDCUtilHelper : public QObject {
   DDCUtilHelper(QObject *parent = nullptr);
 
  public slots:
-  void init();
+  void getMonitorsList();
 
  signals:
-  void initCompleted();
+  //  void getMonitorsListCompleted(QList<MonitorItem> monitors);
 };
 
 #endif  // DDCUTILHELPER_H

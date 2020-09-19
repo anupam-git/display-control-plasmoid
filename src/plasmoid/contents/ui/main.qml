@@ -29,13 +29,13 @@ Item {
             Component.onCompleted: {
                 //console.log("### SCREENS : ", JSON.stringify(Qt.application.screens, null, 2));
 
-                DDCUtilHelper.init();
+                DDCUtilHelper.getMonitorsList();
             }
 
             Connections {
                 target: DDCUtilHelper
-                onInitCompleted: {
-                    console.log("Init Completed.")
+                function onGetMonitorsListCompleted(monitors) {
+                    console.log("Get Monitors List", monitors)
                 }
             }
 

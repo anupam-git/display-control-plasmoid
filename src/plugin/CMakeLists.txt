@@ -2,6 +2,7 @@ set(
     CPP_SOURCES
         displaycontrolplasmoidplugin.cpp
         DDCUtilHelper.cpp
+        monitoritem.cpp
 
     ###
         ../plasmoid/contents/ui/main.qml
